@@ -10,5 +10,14 @@
         overflow-x: auto;
     }
 
-    
+
+    @media screen and (max-width: 680px) {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 415px) {
+        max-width: 270px;
+        padding: 15px;
+    }
 }
