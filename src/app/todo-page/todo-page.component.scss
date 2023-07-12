@@ -1,0 +1,14 @@
+.todocard {
+    background: white;
+    min-height: 350px;
+    width: 650px;
+    padding: 55px;
+    border-radius: 5px;
+
+    &-list {
+        height: 240px;
+        overflow-x: auto;
+    }
+
+    
+}

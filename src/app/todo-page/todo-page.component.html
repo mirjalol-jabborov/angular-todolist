@@ -1,0 +1,9 @@
+<div class="todocard d-flex flex-column gap-3">
+        <form (ngSubmit)="onSubmit(todoForm)" #todoForm="ngForm" class="todocard-form d-flex gap-2">
+            <input name="task" class="form-control" ngModel type="text" placeholder="new task">
+            <button class="btn btn-info">add</button>
+        </form>
+        <div class="todocard-list d-flex flex-column gap-2">
+            <app-todolist *ngFor="let todo of todoList" [todo]="todo" (deleteTodo)="deleteTodo($event)"></app-todolist>
+        </div>
+</div>
